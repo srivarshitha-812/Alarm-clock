@@ -1,7 +1,6 @@
 import datetime
 import time
 from playsound import playsound
-
 def get_alarm_input():
     while True:
         try:
@@ -14,7 +13,6 @@ def get_alarm_input():
             return alarm_hour, alarm_min, alarm_sound
         except ValueError:
             print("Invalid input. Please enter a valid hour (0-12) and minute (0-59).")
-
 def set_alarm(alarm_hour, alarm_min, alarm_sound):
     while True:
         now = datetime.datetime.now()
